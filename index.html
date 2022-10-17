@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title id="titleWeb"></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinload.css">
+    <link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+<body>
+    <template id="App">
+        <div class="wrapper" onload="loadSound()">
+            <!-- Preloader -->
+            <div id="preloader">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </div>
+            <div id="bg"></div>
+            <div class="content">
+                <header>
+                    <h2 style="color: rgb(216, 42, 147); font-size: 30px;" id="title"></h2>
+                    <h4 id="desc" style="color: rgb(193, 67, 67); margin-top: 200px;"></h4>
+                </header>
+                <button id="yes" type="button" class="btn btn-danger btn-lg"> </button>
+                <button id="no" type="button" class="btn btn-info btn-lg"></button>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./js/main.js"></script>
+
+        <script>
+            function loadSound() {
+                var audio = new Audio('sound/sound.mp3');
+                audio.play();
+            }
+        </script>
+    </template>
+
+    <template id="Timeout">
+        <div id="bg2"></div>
+
+        <div class="content">
+            <header>
+                <h2 style="font-weight: bolder; color: rgb(216, 42, 147); margin-top:300px; margin-bottom:300px;" id="title">Biết rằng dear cô nương không thể kiềm chế được sự tò mò 😌 nhưng thông điệp này chỉ đúng vào 20/10/2022 mới truy cập được hehehehehe</h2>
+            </header>
+        </div>
+    </template>
+
+    <script>
+        const due = (new Date("2022-10-17")).valueOf();
+
+        if (due <= Date.now()) {
+            const app = document.getElementsByTagName("template")[0];
+
+            document.body.appendChild(app.content.cloneNode(true));
+        } else {
+            const app = document.getElementsByTagName("template")[1];
+
+            document.body.appendChild(app.content.cloneNode(true));
+        }
+    </script>
+</body>
+
+</html>
