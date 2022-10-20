@@ -1,7 +1,7 @@
 const CONFIG = {
     titleWeb: "20-10-2022 for dear",
     introTitle: 'Hello Oanh, my darling ',
-    introDesc: `Cuối cùng cũng đến ngày 20/10 rồi ha? Em có háo hức không vậy 😄. Hì hì, chúc mừng sinh nhật mẹ em nha 😊. Cháu chúc bác luôn mạnh khỏe, hạnh phúc và gặp nhiều may mắn trong cuộc sống ạ! Cháu iu con gái bác lắm 😆. Còn về em thì:`,
+    introDesc: `Cuối cùng cũng đến ngày 20/10 rồi ha? Em có háo hức không vậy 😄. Hôm nay lạnh ghê em ha? Nay 20/10 đi chơi với ny em có vui không 😊.Có nhiều điều anh muốn nói với em nhưng trên hết thì:`,
     btnIntro: 'Thì seo?',
     title: 'Chúc người yêu anh có một ngày 20/10 thật đáng nhớ với nhiều sự đáng yêu nhaaa 🥳',
     desc: 'Thấy iu Shiba không nào ♥️ ? ',
@@ -11,9 +11,9 @@ const CONFIG = {
     btnReply: 'Gửi cho Shiba',
     reply: 'Iu thì iu mà không iu thì vẫn iu. Iu Shiba lắmmm 😍',
     mess: 'anh cũng thế iu em nhìu nhìu 😉',
-    messDesc: 'Mong điều này sẽ thêm xíu dịu dàng cho ngày 20-10 của em. Người yêu ơi, với anh, ảnh nào của em anh cũng thấy rất xinh nhưng xinh nhất là những ảnh em cười, nên mong em cười nhiều lên nhớ💜, và là những nụ cười thật lòng nha. Mong rằng em hãy tin tưởng Shiba, với năng lượng em đã mang tới cho anh, người yêu em sẽ cố gắng nhiều hơn nữa cho tương lai bọn mình! Mong thời gian tới em sẽ chiếu cố Shiba nhiều hơn ạ 🤗',
+    messDesc: 'Mong điều này sẽ thêm xíu dịu dàng cho ngày 20-10 của em. Người yêu ơi, với anh, ảnh nào của em anh cũng thấy rất xinh nhưng xinh nhất là những ảnh em cười, nên mong em cười nhiều lên nhớ💜, và là những nụ cười thật lòng nha. Mong rằng em hãy tin tưởng Shiba, với năng lượng em đã mang tới cho anh, người yêu em sẽ cố gắng nhiều hơn! Mong thời gian tới em sẽ chiếu cố Shiba nhiều hơn ạ 🤗',
     btnAccept: 'Sau đây là một bài nhạc anh rất yêu thích, tiết lộ cho mình em đấy 😉 ',
-    messLink: 'https://www.facebook.com/npquans/'
+    messLink: 'https://www.youtube.com/watch?v=SE3kpqUvqBU'
 }
 
 $(document).ready(function() {
